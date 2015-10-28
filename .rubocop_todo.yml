@@ -9,11 +9,9 @@
 Lint/AmbiguousOperator:
   Enabled: true
 
-# Offense count: 1
 # Configuration parameters: AllowSafeAssignment.
 Lint/AssignmentInCondition:
-  Exclude:
-    - 'Gemfile'
+  Enabled: true
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -21,12 +19,10 @@ Lint/AssignmentInCondition:
 Lint/DefEndAlignment:
   Enabled: false
 
-# Offense count: 1
 Lint/HandleExceptions:
   Exclude:
     - 'spec/spec_helper.rb'
 
-# Offense count: 1
 Lint/NestedMethodDefinition:
   Exclude:
     - 'spec/string_spec.rb'

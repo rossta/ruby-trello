@@ -142,7 +142,6 @@ module Helpers
     }]
   end
 
-
   def cards_payload
     JSON.generate(cards_details)
   end

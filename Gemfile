@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-if active_model_version = ENV['ACTIVE_MODEL_VERSION']
-  gem 'activemodel', active_model_version
-end
+active_model_version = ENV['ACTIVE_MODEL_VERSION']
+gem 'activemodel', active_model_version if active_model_version
 
 gemspec
 
