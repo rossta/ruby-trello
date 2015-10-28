@@ -11,7 +11,7 @@ module Trello
       :return_url
     ]
 
-    attr_accessor *CONFIGURABLE_ATTRIBUTES
+    attr_accessor(*CONFIGURABLE_ATTRIBUTES)
 
     def self.configurable_attributes
       CONFIGURABLE_ATTRIBUTES
