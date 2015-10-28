@@ -298,7 +298,7 @@ module Trello
       it "puts all fields except id" do
         expected_fields = %w{ name description closed starred idOrganization}.map { |s| s.to_sym }
 
-        expect(client).to receive(:put) do |anything, body|
+        expect(client).to receive(:put) do |_anything, body|
           expect(body.keys).to match expected_fields
           any_board_json
         end
@@ -318,7 +318,7 @@ module Trello
       it "uses the correct resource" do
         expected_resource_id = "xxx_board_id_xxx"
 
-        expect(client).to receive(:put) do |path, anything|
+        expect(client).to receive(:put) do |path, _anything|
           expect(path).to match(/#{expected_resource_id}\/\z/)
           any_board_json
         end

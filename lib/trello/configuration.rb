@@ -54,7 +54,7 @@ module Trello
         oauth_token_secret: oauth_token_secret,
         return_url: return_url,
         callback: callback,
-      }.delete_if { |key, value| value.nil? }
+      }.delete_if { |_key, value| value.nil? }
     end
 
     def basic_credentials

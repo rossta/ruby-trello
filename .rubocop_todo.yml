@@ -32,11 +32,12 @@ Lint/ParenthesesAsGroupedExpression:
 # Offense count: 5
 # Cop supports --auto-correct.
 Lint/UnusedBlockArgument:
-  Exclude:
-    - 'Rakefile'
-    - 'lib/trello/basic_data.rb'
-    - 'lib/trello/configuration.rb'
-    - 'spec/board_spec.rb'
+  Enabled: true
+  # Exclude:
+  #   - 'Rakefile'
+  #   - 'lib/trello/basic_data.rb'
+  #   - 'lib/trello/configuration.rb'
+  #   - 'spec/board_spec.rb'
 
 # Offense count: 5
 # Cop supports --auto-correct.

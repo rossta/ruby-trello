@@ -30,7 +30,7 @@ namespace :example do
   end
 
   desc "convert request token to access token"
-  task :get_access_token, :request_token_key, :request_token_secret, :oauth_verifier do |t, args|
+  task :get_access_token, :request_token_key, :request_token_secret, :oauth_verifier do |_t, args|
     ensure_consumer_credentials
     @developer_public_key = ENV["DEVELOPER_PUBLIC_KEY"]
     @developer_secret     = ENV["DEVELOPER_SECRET"]

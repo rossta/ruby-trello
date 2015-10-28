@@ -70,7 +70,7 @@ module Trello
 
     def self.one(name, opts = {})
       class_eval do
-        define_method(:"#{name}") do |*args|
+        define_method(:"#{name}") do |*_args|
           options = opts.dup
           klass   = options.delete(:via) || Trello.const_get(name.to_s.camelize)
           ident   = options.delete(:using) || :id
