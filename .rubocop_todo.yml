@@ -29,22 +29,17 @@ Lint/NestedMethodDefinition:
 Lint/ParenthesesAsGroupedExpression:
   Enabled: true
 
-# Offense count: 5
 # Cop supports --auto-correct.
 Lint/UnusedBlockArgument:
   Enabled: true
-  # Exclude:
-  #   - 'Rakefile'
-  #   - 'lib/trello/basic_data.rb'
-  #   - 'lib/trello/configuration.rb'
-  #   - 'spec/board_spec.rb'
 
 # Offense count: 5
 # Cop supports --auto-correct.
 Lint/UnusedMethodArgument:
-  Exclude:
-    - 'lib/trello/authorization.rb'
-    - 'lib/trello/basic_data.rb'
+  Enabled: true
+  # Exclude:
+  #   - 'lib/trello/authorization.rb'
+  #   - 'lib/trello/basic_data.rb'
 
 # Offense count: 5
 Lint/UselessAssignment:

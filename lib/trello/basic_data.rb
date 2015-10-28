@@ -110,7 +110,7 @@ module Trello
       update_fields(fields)
     end
 
-    def update_fields(fields)
+    def update_fields(_fields)
       raise NotImplementedError, "#{self.class} does not implement update_fields."
     end
 

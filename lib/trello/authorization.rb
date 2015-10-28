@@ -5,9 +5,9 @@ module Trello
   module Authorization
 
     AuthPolicy = Class.new do
-      def initialize(attrs = {}); end
+      def initialize(_attrs = {}); end
 
-      def authorize(*args)
+      def authorize(*_args)
         raise Trello::ConfigurationError, "Trello has not been configured to make authorized requests."
       end
     end
@@ -168,7 +168,7 @@ module Trello
         )
       end
 
-      def get_auth_header(url, verb, options = {})
+      def get_auth_header(url, _verb, _options = {})
         request = Net::HTTP::Get.new Addressable::URI.parse(url).to_s
 
         consumer.options[:signature_method] = 'HMAC-SHA1'
