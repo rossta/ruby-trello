@@ -13,11 +13,10 @@ Lint/AmbiguousOperator:
 Lint/AssignmentInCondition:
   Enabled: true
 
-# Offense count: 1
 # Cop supports --auto-correct.
 # Configuration parameters: AlignWith, SupportedStyles, AutoCorrect.
 Lint/DefEndAlignment:
-  Enabled: false
+  Enabled: true
 
 Lint/HandleExceptions:
   Exclude:

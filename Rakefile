@@ -46,14 +46,14 @@ namespace :example do
     puts "key => #{the_access_token.key}, secret => #{the_access_token.secret}"
   end
 
-    def ensure_consumer_credentials
-      %w{PUBLIC_KEY SECRET}.each do |name|
-        fullname = "DEVELOPER_#{name}"
-        unless ENV[fullname]
-          puts "ERROR: Missing <#{fullname}> environment variable."
-	  exit 1
-        end
+  def ensure_consumer_credentials
+    %w{PUBLIC_KEY SECRET}.each do |name|
+      fullname = "DEVELOPER_#{name}"
+      unless ENV[fullname]
+        puts "ERROR: Missing <#{fullname}> environment variable."
+        exit 1
       end
+    end
   end
 
   def parse_token(text)
