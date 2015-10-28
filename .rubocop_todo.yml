@@ -178,23 +178,9 @@ Style/DeprecatedHashMethods:
   Exclude:
     - 'lib/trello/board.rb'
 
-# Offense count: 17
 # Configuration parameters: Exclude.
 Style/Documentation:
-  Exclude:
-    - 'lib/trello.rb'
-    - 'lib/trello/association.rb'
-    - 'lib/trello/association_proxy.rb'
-    - 'lib/trello/authorization.rb'
-    - 'lib/trello/basic_data.rb'
-    - 'lib/trello/client.rb'
-    - 'lib/trello/configuration.rb'
-    - 'lib/trello/core_ext/array.rb'
-    - 'lib/trello/core_ext/hash.rb'
-    - 'lib/trello/core_ext/string.rb'
-    - 'lib/trello/has_actions.rb'
-    - 'lib/trello/multi_association.rb'
-    - 'lib/trello/net.rb'
+  Enabled: false
 
 # Offense count: 5
 # Cop supports --auto-correct.
