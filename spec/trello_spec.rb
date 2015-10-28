@@ -16,7 +16,7 @@ describe Trello do
     it 'builds auth policy client uses to make requests' do
       allow(TInternet).to receive(:execute)
       expect(Trello.auth_policy).to receive(:authorize)
-      Trello.client.get(:member, params = {})
+      Trello.client.get(:member, {})
     end
 
     it 'configures basic auth policy' do

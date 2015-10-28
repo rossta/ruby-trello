@@ -39,8 +39,6 @@ module Trello
       end
 
       it 'creates a new webhook and saves it on Trello', refactor: true do
-        payload = { name: 'Test Card', desc: nil }
-
         webhook = webhooks_details.first
         result = JSON.generate(webhook)
 

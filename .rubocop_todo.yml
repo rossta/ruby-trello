@@ -33,22 +33,12 @@ Lint/ParenthesesAsGroupedExpression:
 Lint/UnusedBlockArgument:
   Enabled: true
 
-# Offense count: 5
 # Cop supports --auto-correct.
 Lint/UnusedMethodArgument:
   Enabled: true
-  # Exclude:
-  #   - 'lib/trello/authorization.rb'
-  #   - 'lib/trello/basic_data.rb'
 
-# Offense count: 5
 Lint/UselessAssignment:
-  Exclude:
-    - 'Rakefile'
-    - 'spec/board_spec.rb'
-    - 'spec/trello_spec.rb'
-    - 'spec/webhook_spec.rb'
-    - 'test.rb'
+  Enabled: true
 
 # Offense count: 3
 Lint/Void:

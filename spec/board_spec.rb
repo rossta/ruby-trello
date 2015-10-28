@@ -144,7 +144,7 @@ module Trello
       it "passes the label limit" do
         client.stub(:get).with("/boards/abcdef123456789123456789/labels", {:limit => 50}).
           and_return label_payload
-        labels = board.labels(:limit => 50)
+        board.labels(:limit => 50)
       end
     end
 

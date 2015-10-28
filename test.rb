@@ -17,7 +17,7 @@ OAuthPolicy.consumer_credential = OAuthCredential.new 'PUBLIC_KEY', 'SECRET'
 # If you want your token to expire after 30 days, drop the &expiration=never.
 OAuthPolicy.token = OAuthCredential.new 'ACCESS_TOKEN_KEY', nil
 
-me = Member.find("me")
+Member.find("me")
 board = Board.create(name: "ruby-trello test")
 if board.has_lists?
   list = board.lists.first
