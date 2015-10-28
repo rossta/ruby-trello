@@ -4,7 +4,7 @@ include Trello
 include Trello::Authorization
 
 describe Client, "and how it handles authorization" do
-  let (:fake_ok_response) do
+  let(:fake_ok_response) do
     double "A fake OK response",
       code: 200,
       body: "A fake response body"

@@ -26,10 +26,8 @@ Lint/NestedMethodDefinition:
   Exclude:
     - 'spec/string_spec.rb'
 
-# Offense count: 1
 Lint/ParenthesesAsGroupedExpression:
-  Exclude:
-    - 'spec/client_spec.rb'
+  Enabled: true
 
 # Offense count: 5
 # Cop supports --auto-correct.
